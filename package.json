@@ -5,7 +5,7 @@
   "homepage": "https://github.com/tualo/genapi",
   "main": "lib/main.js",
   "bin": {
-    "genapi": "./bin/genapi"
+    "genapi": "./bin/compiler"
   },
   "version": "0.0.1",
   "engines": {

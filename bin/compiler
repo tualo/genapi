@@ -4,20 +4,22 @@ var fs = require('fs'),
     program = require('commander'),
     pjson = require('../package.json'),
     path =  require('path'),
-    Compiler = require('../lib/classes/genapi/Compiler').Compiler;
+    Compiler = require('../lib/classes/Compiler').Compiler;
 
 
 program
     .version(pjson.version)
     .description('genicam comiler')
     .usage('[options] <file ...>')
+    .option('-n,--name [name]','set a class name')
     .parse(process.argv);
 if (program.args.length !== 1){
   program.help();
 }else{
   var xml = fs.readFileSync(program.args[0]);
   var compiler = new Compiler();
-  compiler.compile(xml);
+  
+  compiler.compile(xml,program.name);
   console.log(compiler.getCode());
 }
 //console.log(program);
