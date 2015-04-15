@@ -1,0 +1,42 @@
+
+{
+  "name": "genapi",
+  "description": "genapi module",
+  "homepage": "https://github.com/tualo/genapi",
+  "main": "lib/main.js",
+  "bin": {
+    "genapi": "./bin/genapi"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "keywords": [
+    "genapi",
+    "gige"
+  ],
+  "author": [
+    {
+      "name": "Thomas Hoffmann",
+      "email": "thomas.hoffmann@tualo.de",
+      "url": "http://tualo.de/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Thomas Hoffmann",
+      "email": "thomas.hoffmann@tualo.de",
+      "url": "http://tualo.de/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tualo/genapi.git"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "commander": "2.8.0",
+    "xml2js": "0.4.6"
+  }
+
+}
