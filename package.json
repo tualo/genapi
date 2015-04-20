@@ -1,9 +1,8 @@
-
 {
   "name": "genapi",
   "description": "genapi module",
   "homepage": "https://github.com/tualo/genapi",
-  "main": "lib/main.js",
+  "main": "lib/index.js",
   "bin": {
     "genapi": "./bin/compiler"
   },
@@ -37,6 +36,11 @@
   "dependencies": {
     "commander": "2.8.0",
     "xml2js": "0.4.6"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2"
   }
-
 }
