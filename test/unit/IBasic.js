@@ -3,7 +3,7 @@ var GenAPI = require('../../lib/classes/GenAPI').GenAPI;
 exports.utils = {
   pureValues: function(test){
 
-      test.expect(11);
+      test.expect(10);
 
       var genapi = new GenAPI(null);
       var t = new TYPES.IBasic(genapi,'N1');
@@ -25,10 +25,10 @@ exports.utils = {
 
       t.setSelected(0);
       test.equals(t.selected,0);
-
+      /*
       t.setInvalidator('N2');
       test.equals(t.invalidator,'N2');
-
+      */
       t.setVisibility('Simple');
       test.equals(t.visibility,'Simple');
 
